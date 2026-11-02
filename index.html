@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>کلاس پلاس | کلاس آنلاین با دوربین بیشتر، بدون نصب</title>
+<meta name="description" content="کلاس آنلاین و وبینار با دوربین‌های بیشتر، ضبط جلسه و ورود با یک لینک. قیمت شفاف برای هر جلسه، بدون قرارداد سالانه.">
+<meta property="og:title" content="کلاس پلاس؛ جلسه‌ات را یک پله بالاتر ببر">
+<meta property="og:description" content="کلاس آنلاین با دوربین بیشتر، ضبط جلسه و ورود با یک لینک.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%234338ca'/%3E%3Crect x='9' y='14' width='22' height='20' rx='5' fill='%23fff'/%3E%3Cpath d='M33 21l7-4v14l-7-4z' fill='%23fff'/%3E%3Ccircle cx='37' cy='11' r='8' fill='%23f59e0b'/%3E%3Cpath d='M37 7v8M33 11h8' stroke='%2314183a' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap">
+<style>
+:root{--ink:#14183a;--muted:#555b7a;--paper:#f7f8fc;--card:#fff;--line:#dfe2ef;--brand:#4338ca;--brand-ink:#fff;--teal:#0891b2;--amber:#f59e0b;--hero:#2e2a8f;--tile:#4540b8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eef0ff;--muted:#a7acd0;--paper:#0e1126;--card:#171b38;--line:#2a2f57;--brand:#8b85ff;--brand-ink:#0e1126;--hero:#1b1a5c;--tile:#2d2a8a}}
+:root[data-theme="dark"]{--ink:#eef0ff;--muted:#a7acd0;--paper:#0e1126;--card:#171b38;--line:#2a2f57;--brand:#8b85ff;--brand-ink:#0e1126;--hero:#1b1a5c;--tile:#2d2a8a}
+*{box-sizing:border-box}
+html{color-scheme:light dark;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Vazirmatn',Tahoma,sans-serif;line-height:1.85;font-size:16px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;text-decoration:none}
+nav a{margin-inline-start:22px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:12px 26px;border-radius:12px;background:var(--brand);color:var(--brand-ink);font-weight:600;text-decoration:none;border:2px solid var(--brand)}
+.btn.ghost{background:transparent;color:var(--brand)}
+.hero{background:var(--hero);color:#fff;border-radius:28px;padding:56px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.hero h1{margin:0 0 14px;font-size:clamp(28px,4.6vw,46px);line-height:1.4;font-weight:800}
+.hero p{margin:0 0 26px;font-size:18px;opacity:.92;max-width:480px}
+.hero .btn{background:#fff;border-color:#fff;color:#2e2a8f}
+.hero .btn.ghost{background:transparent;color:#fff;margin-inline-start:8px}
+.grid12{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.t{aspect-ratio:4/3;border-radius:12px;background:var(--tile);display:flex;align-items:flex-end;padding:6px 8px;font-size:12px;color:#d9d7ff;position:relative}
+.t::before{content:"";position:absolute;top:30%;inset-inline-start:50%;width:26px;height:26px;margin-inline-start:-13px;border-radius:50%;background:rgba(255,255,255,.22)}
+.t:nth-child(3n)::before{background:rgba(245,158,11,.5)}
+.t.on{outline:3px solid var(--amber);animation:pulse 2.4s ease-out 1}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(245,158,11,.7)}100%{box-shadow:0 0 0 16px rgba(245,158,11,0)}}
+.cap{text-align:center;font-size:13px;margin-top:10px;opacity:.85}
+section{padding:64px 0 0}
+h2{font-size:30px;margin:0 0 8px;line-height:1.5}
+.lead{color:var(--muted);margin:0 0 30px;max-width:560px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.feat div{padding:18px 0;border-top:1px solid var(--line)}
+.feat b{display:block;font-size:17px}
+.feat span{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.steps div{counter-increment:s;padding-top:14px;border-top:3px solid var(--brand)}
+.steps div::before{content:counter(s);display:block;font-weight:800;font-size:28px;color:var(--brand)}
+.steps b{display:block}.steps span{color:var(--muted);font-size:15px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column}
+.plan.pop{border:2px solid var(--brand);position:relative}
+.plan.pop::after{content:"پیشنهاد ما";position:absolute;top:-13px;inset-inline-start:18px;background:var(--amber);color:#14183a;font-size:12px;font-weight:800;padding:1px 12px;border-radius:99px}
+.plan h3{margin:0;font-size:19px}
+.pr{font-size:30px;font-weight:800;color:var(--brand);margin:8px 0 0}
+.pr small{font-size:13px;font-weight:400;color:var(--muted)}
+.plan ul{list-style:none;padding:0;margin:14px 0 20px;flex:1;font-size:14.5px}
+.plan li{padding:3px 0}
+.plan li::before{content:"✓";color:var(--teal);font-weight:800;margin-inline-end:8px}
+.plan .btn{text-align:center;padding:10px}
+.note{margin-top:18px;padding:18px 22px;border:1px dashed var(--brand);border-radius:16px;font-size:15px}
+.note b{color:var(--brand)}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:17px}
+details p{margin:8px 0 0;color:var(--muted)}
+.cta{margin-top:72px;background:var(--brand);color:var(--brand-ink);border-radius:26px;padding:44px 30px;text-align:center}
+.cta h2{margin:0 0 8px}.cta p{margin:0 0 22px;opacity:.92}
+.cta .btn{background:var(--brand-ink);color:var(--brand);border-color:var(--brand-ink)}
+footer{padding:36px 0 28px;color:var(--muted);font-size:13px;text-align:center}
+@media (max-width:780px){
+.hero{grid-template-columns:1fr;padding:34px 22px}
+.feat,.steps{grid-template-columns:1fr}
+nav a{display:none}
+}
+@media (prefers-reduced-motion:reduce){.t.on{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="#">
+    <svg width="42" height="42" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs><rect width="48" height="48" rx="14" fill="url(#g)"/><rect x="9" y="14" width="22" height="20" rx="5" fill="#fff"/><path d="M33 21l7-4v14l-7-4z" fill="#fff"/><circle cx="37" cy="11" r="8" fill="#f59e0b"/><path d="M37 7v8M33 11h8" stroke="#14183a" stroke-width="2.4" stroke-linecap="round"/></svg>
+    کلاس پلاس
+  </a>
+  <nav><a href="#features">امکانات</a><a href="#how">نحوه کار</a><a href="#pricing">تعرفه</a><a href="#faq">پرسش‌ها</a><a class="btn" href="#contact" style="margin-inline-start:22px;color:var(--brand-ink)">جلسه آزمایشی</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <div>
+    <h1>جلسه‌ات را یک پله بالاتر ببر</h1>
+    <p>کلاس آنلاین با دوربین‌های بیشتر، ضبط جلسه و ورود با یک لینک. بدون نصب نرم‌افزار و بدون قرارداد سالانه.</p>
+    <a class="btn" href="#contact">درخواست جلسه آزمایشی</a><a class="btn ghost" href="#pricing">دیدن تعرفه</a>
+  </div>
+  <div aria-hidden="true">
+    <div class="grid12">
+      <div class="t on">مدرس</div><div class="t"></div><div class="t"></div><div class="t"></div>
+      <div class="t"></div><div class="t"></div><div class="t"></div><div class="t"></div>
+      <div class="t"></div><div class="t"></div><div class="t"></div><div class="t"></div>
+    </div>
+    <div class="cap">۱۲ دوربین فعال در یک جلسه</div>
+  </div>
+</div>
+
+<section id="features">
+  <h2>برای کلاسی که همه دیده می‌شوند</h2>
+  <p class="lead">کلاس پلاس روی BigBlueButton ساخته شده، سامانه‌ای متن‌باز و آموزش‌محور. همان امکانات کلاس واقعی را دارید.</p>
+  <div class="feat">
+    <div><b>ورود با یک لینک</b><span>شرکت‌کننده‌ها از مرورگر وارد می‌شوند. نصب و ثبت‌نام اجباری ندارند.</span></div>
+    <div><b>دوربین بیشتر</b><span>تعداد دوربین هر جلسه را خودتان تعیین می‌کنید و هزینه‌اش از قبل مشخص است.</span></div>
+    <div><b>وایت‌برد و اشتراک صفحه</b><span>درس را روی تخته بنویسید، اسلاید و فایل نشان بدهید.</span></div>
+    <div><b>ضبط جلسه</b><span>جلسه ضبط می‌شود و بعد می‌توانید لینک دانلود را بدهید (از پلن حرفه‌ای).</span></div>
+    <div><b>اتاق گروهی و نظرسنجی</b><span>کلاس را به گروه‌های کوچک تقسیم کنید و حال کلاس را بپرسید.</span></div>
+    <div><b>پشتیبانی فارسی</b><span>از تیمی پشتیبانی می‌گیرید که کلاس آنلاین مدارس را می‌شناسد.</span></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>سه قدم تا اولین جلسه</h2>
+  <p class="lead">از ساخت جلسه تا ورود شرکت‌کننده‌ها چند دقیقه بیشتر طول نمی‌کشد.</p>
+  <div class="steps">
+    <div><b>ثبت‌نام کنید</b><span>با شماره موبایل وارد شوید و پلن یا بسته‌ی خود را انتخاب کنید.</span></div>
+    <div><b>جلسه بسازید</b><span>ظرفیت و تعداد دوربین را تعیین کنید و لینک جلسه را بفرستید.</span></div>
+    <div><b>کلاس را برگزار کنید</b><span>شرکت‌کننده‌ها با یک کلیک وارد می‌شوند و کلاس شروع می‌شود.</span></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>تعرفه هر جلسه</h2>
+  <p class="lead">قیمت هر جلسه تا ۶۰ دقیقه است. جلسه‌ی بلندتر به‌صورت ساعتی حساب می‌شود.</p>
+  <div class="plans">
+    <div class="plan"><h3>استارتر</h3><div class="pr">۳۵٬۰۰۰ <small>تومان / جلسه</small></div>
+      <ul><li>تا ۳۰ شرکت‌کننده</li><li>۴ دوربین هم‌زمان</li><li>وایت‌برد و اشتراک صفحه</li><li>چت و نظرسنجی</li></ul><a class="btn ghost" href="#contact">انتخاب</a></div>
+    <div class="plan pop"><h3>حرفه‌ای</h3><div class="pr">۷۵٬۰۰۰ <small>تومان / جلسه</small></div>
+      <ul><li>تا ۶۰ شرکت‌کننده</li><li>۱۲ دوربین هم‌زمان</li><li>ضبط جلسه و دانلود</li><li>اتاق‌های گروهی</li></ul><a class="btn" href="#contact">انتخاب</a></div>
+    <div class="plan"><h3>بیزینس</h3><div class="pr">۱۸۰٬۰۰۰ <small>تومان / جلسه</small></div>
+      <ul><li>تا ۱۵۰ شرکت‌کننده</li><li>۲۵ دوربین هم‌زمان</li><li>ضبط جلسه</li><li>پشتیبانی اولویت‌دار</li></ul><a class="btn ghost" href="#contact">انتخاب</a></div>
+    <div class="plan"><h3>سازمانی</h3><div class="pr">توافقی <small>بالای ۱۵۰ نفر</small></div>
+      <ul><li>ظرفیت و دوربین سفارشی</li><li>اتصال به سامانه‌ی شما</li><li>قرارداد سالانه</li></ul><a class="btn ghost" href="#contact">تماس با ما</a></div>
+  </div>
+  <div class="note"><b>بسته‌ی ماهانه برای کلاس ثابت:</b> ۳۰ نفر، ۲۰ ساعت در ماه، همراه ضبط جلسه، ۴۵۰٬۰۰۰ تومان. <b>دوربین اضافه:</b> ۵٬۰۰۰ تومان برای هر دوربین در هر جلسه. بسته‌های حجمی تا ۳۰٪ تخفیف دارند.</div>
+</section>
+
+<section id="faq">
+  <h2>پرسش‌های متداول</h2>
+  <p class="lead">اگر جواب سؤالتان اینجا نبود، از پایین صفحه با ما تماس بگیرید.</p>
+  <details><summary>فرق کلاس پلاس با کلاس آنلاین سامانه‌ی مدرسه‌مون چیست؟</summary><p>کلاس آنلاین مدرسه‌مون به سامانه‌ی مدرسه و کلاس‌بندی وصل است و برای هر دانش‌آموز در سال حساب می‌شود. کلاس پلاس مستقل است و برای جلسه‌های موردی یا سازمان‌هایی که سامانه‌ی مدرسه ندارند ساخته شده، با قیمت هر جلسه.</p></details>
+  <details><summary>شرکت‌کننده‌ها باید برنامه نصب کنند؟</summary><p>نه. با لینک جلسه از مرورگر موبایل یا کامپیوتر وارد می‌شوند.</p></details>
+  <details><summary>جلسه ضبط می‌شود؟</summary><p>بله، در پلن حرفه‌ای و بالاتر. بعد از جلسه لینک دانلود ضبط را می‌گیرید.</p></details>
+  <details><summary>اگر بیشتر از ۱۲ دوربین لازم داشته باشم؟</summary><p>می‌توانید دوربین اضافه بخرید (۵٬۰۰۰ تومان برای هر دوربین در هر جلسه) یا پلن بیزینس و سازمانی را انتخاب کنید.</p></details>
+  <details><summary>پرداخت چطور انجام می‌شود؟</summary><p>پرداخت آنلاین با درگاه بانکی است. برای استفاده‌ی مداوم می‌توانید کیف پول شارژ کنید و هزینه‌ی هر جلسه از آن کم شود.</p></details>
+</section>
+
+<div class="cta" id="contact">
+  <h2>جلسه‌ی آزمایشی بگیرید</h2>
+  <p>بگویید چند نفر هستید و چند دوربین لازم دارید؛ جلسه را برایتان آماده می‌کنیم.</p>
+  <!-- لینک‌های زیر را با راه ارتباطی خودتان عوض کنید -->
+  <a class="btn" href="https://t.me/YOUR_TELEGRAM_ID">پیام در تلگرام</a>
+  <a class="btn ghost" href="mailto:info@example.com" style="color:var(--brand-ink);border-color:var(--brand-ink);margin-inline-start:8px">ایمیل</a>
+</div>
+</main>
+
+<footer>کلاس پلاس © محصول مجموعه مدرسمون</footer>
+</div>
+</body>
+</html>
